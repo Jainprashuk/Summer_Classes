@@ -6,5 +6,5 @@ Some codes during Summer Placment Classes
 ### Form Handling 
 https://jainprashuk.github.io/Summer_Classes/form_handling/
 
-### Api Fetching And Seraching 
+### Api Fetching And Searching 
 https://jainprashuk.github.io/Summer_Classes/Api_fetching/
