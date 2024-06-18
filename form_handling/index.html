@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <form onsubmit="handlesubmit(event)" action="" id="formid" class="bg-white rounded-xl shadow-xl rounded px-8 pt-6 pb-8 mb-4 w-96">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+            <input  type="text" id="username" name="name" placeholder="Enter Your Name" class="form-input mt-1 block w-full border-gray-900 rounded-md">
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-input mt-1 block w-full border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <label for="phoneNumber" class="block text-gray-700 text-sm font-bold mb-2">Phone Number:</label>
+            <input type="text" id="number" name="phoneNumber" placeholder="Enter Your Phone NUmber" class="form-input mt-1 block w-full border-gray-300 rounded-md">
+        </div>
+        <div class="mb-4">
+            <label for="age" class="block text-gray-700 text-sm font-bold mb-2">Age:</label>
+            <input type="number" id="age" name="Age" placeholder="Enter Your Age" class="form-input mt-1 block w-full border-gray-300 rounded-md">
+        </div>
+        <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+        </div>
+        <div id="errorbox" class="text-red-700">
+
+        </div>
+    </form>
+
+    
+
+
+
+    <div  id="success" class="hidden bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96">
+        
+        <h1 class="m-2 text-center">You Have Been Registered SucessFully</h1>
+        <p id="usernamelelo" class="text-center"></p>
+        <img class="mx-auto" src="https://media.tenor.com/WqSXkGKKqykAAAAM/indian-dance-dancing.gif" alt="">
+    </div>
+</body>
+
+</html>

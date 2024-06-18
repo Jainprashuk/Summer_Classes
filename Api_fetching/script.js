@@ -1,4 +1,4 @@
-// Function to fetch and display initial data
+
 async function fetchData() {
     try {
         const response = await fetch("https://dummyjson.com/products");
@@ -10,7 +10,7 @@ async function fetchData() {
     }
 }
 
-// Function to display products
+
 function displayProducts(products) {
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML = ''; 
