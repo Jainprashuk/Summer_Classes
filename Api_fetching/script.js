@@ -23,7 +23,7 @@ function displayProducts(products) {
 
         
         const img = document.createElement('img');
-        img.className = 'w-full h-auto rounded-t-xl';
+        img.className = 'w-full h-auto rounded-t-xl min-w-1.5';
         img.src = product.images[0];
         img.alt = 'Image Description';
 
