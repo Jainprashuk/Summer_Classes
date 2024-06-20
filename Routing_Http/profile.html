@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <Navbar class="col-span-4 bg-yellow-400">
+        <div class="bg-gray-300 flex justify-between align-center p-4">
+            <div class="listdecoratiob flex gap-8  align-center ">
+                <a class="text-2xl font-bold " href="/">Home</a>
+                <a class="text-2xl font-bold " href="/profile">Profile</a>
+                <a class="text-2xl font-bold " href="/shop">Shop</a>
+                <!-- <a class="text-xl" href="">About</a> -->
+            </div>
+            <div class="flex gap-8 items-baseline ">
+                <!-- <div class="flex justify-center align-center gap-2">
+                    <input onchange="handleonchange(event)" id="searchbox" class="border-2 rounded-lg p-1 px-3" type="search" name="" id="">
+                    <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </div> -->
+
+                <!-- <button class="p-1 rounded-md px-3 text-white bg-yellow-600" type="button">Login</button> -->
+            </div>
+        </div>
+    </Navbar>
+
+    <section class="w-screen flex justify-center align-center">
+        <div class="flex flex-col max-w-md p-6 bg-gray-300 rounded-lg m-10 ">
+            <img  src="data:image/png;base64,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" alt="" class="flex-shrink-0 object-cover h-64 rounded-sm sm:h-96 dark:bg-gray-500 aspect-square">
+            <div>
+                <h2 class="text-xl font-semibold">Prashuk Jain</h2>
+                <!-- <span class="block pb-2 text-sm dark:text-gray-600">CTO of Company Inc.</span> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eligendi dolorum sequi illum qui unde aspernatur non deserunt</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
