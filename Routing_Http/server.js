@@ -1,6 +1,5 @@
 import http from 'http';
 import fs from 'fs';
-import path from 'path';
 
 const port = 8000;
 
@@ -18,12 +17,11 @@ const server = http.createServer(async (req, res) => {
         const data = await fs.promises.readFile('./shop.html', 'utf8');
         res.end(data);
     } else if (req.url === '/shop.js') {
-        res.writeHead(200, { 'Content-Type': 'application/javascript' });
         const data = await fs.promises.readFile('./shop.js', 'utf8');
         res.end(data);
     } else {
         res.writeHead(404, { 'Content-Type': 'text/plain' });
-        res.end('Not Found');
+        res.end('Hit Corrcet Url');
     }
 });
 
