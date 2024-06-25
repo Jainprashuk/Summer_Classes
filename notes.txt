@@ -1,0 +1,4 @@
+// res.setheader to set content type which will help the brower to recognise the type of content 
+   in which browser has to render th edata from end() ie. text/plain , image , application
+
+   https://www.infidigit.com/wp-content/uploads/2019/12/20191227_012601_0000-768x1664.png

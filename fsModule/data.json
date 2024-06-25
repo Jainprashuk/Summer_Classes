@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Aman",
+        "mathsscore" : 80,
+        "sciencescore"  : 70
+
+    },
+    {
+        "id": 2,
+        "name": "Tarun",
+        "mathsscore" : 90,
+        "sciencescore"  : 95
+    },
+    {
+        "id": 3,
+        "name": "Ravi",
+        "mathsscore" : 60,
+        "sciencescore"  : 85
+    }
+]
