@@ -1,10 +1,16 @@
 import express from 'express'
 
-import { getproducts, addproducts , putproduct , patchproduct , deleteproduct } from '../Controllers/ProductController.js'
+import { getproducts, addproducts , putproduct , patchproduct , deleteproduct , ValidateName, GetDataMiddleware , CheckIdMiddlewRE} from '../Controllers/ProductController.js'
 
 const productrouter = express.Router();
 
-productrouter.route("/").get(getproducts).post(addproducts)
-productrouter.route("/:id").put(putproduct).patch(patchproduct).delete(deleteproduct)
+
+productrouter.use(GetDataMiddleware)
+
+
+productrouter.route("/").get(getproducts).post(ValidateName , addproducts)
+
+// productrouter.use(CheckIdMiddlewRE)
+productrouter.route("/:id").put(CheckIdMiddlewRE , ValidateName , putproduct).patch(patchproduct).delete(deleteproduct)
 
 export {productrouter}
